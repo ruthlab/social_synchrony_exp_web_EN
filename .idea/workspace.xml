@@ -20,66 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0ce3fee-586b-401b-bde4-908932d65ffa" name="Default Changelist" comment="fix bugs3">
-      <change afterPath="$PROJECT_DIR$/Slide2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Slide4.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/Slide12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/Slide13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/Slide3.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/Slide5.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sync/Slide8.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IRI.html" beforeDir="false" afterPath="$PROJECT_DIR$/IRI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide1.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide2.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide3.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide4.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide5.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affect/Slide6.png" beforeDir="false" afterPath="$PROJECT_DIR$/affect/Slide6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debrief.png" beforeDir="false" afterPath="$PROJECT_DIR$/debrief.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide1.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide2.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide3.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide4.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide5.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/Slide6.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaze/Slide6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaze/gaze_sync_no_level.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introAffect.html" beforeDir="false" afterPath="$PROJECT_DIR$/introAffect.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introGaze.html" beforeDir="false" afterPath="$PROJECT_DIR$/introGaze.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introId.html" beforeDir="false" afterPath="$PROJECT_DIR$/introId.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introSync.html" beforeDir="false" afterPath="$PROJECT_DIR$/introSync.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introTouch.html" beforeDir="false" afterPath="$PROJECT_DIR$/introTouch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introValence.html" beforeDir="false" afterPath="$PROJECT_DIR$/introValence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rangeTagAffect.html" beforeDir="false" afterPath="$PROJECT_DIR$/rangeTagAffect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rangeTagGaze.html" beforeDir="false" afterPath="$PROJECT_DIR$/rangeTagGaze.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rangeTagId.html" beforeDir="false" afterPath="$PROJECT_DIR$/rangeTagId.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rangeTagSync.html" beforeDir="false" afterPath="$PROJECT_DIR$/rangeTagSync.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rangeTagTouch.html" beforeDir="false" afterPath="$PROJECT_DIR$/rangeTagTouch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slider_tutorial_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/slider_tutorial_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slider_tutorial_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/slider_tutorial_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide10.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide10.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide11.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide11.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide4.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide4.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide6.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide6.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide7.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide7.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/Slide9.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/sync/Slide9.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sync/general_sync_instructions.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide1.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide2.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide3.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide4.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide5.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/Slide6.png" beforeDir="false" afterPath="$PROJECT_DIR$/touch/Slide6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/touch/touch_sync_no_level.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trail.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trailIntro.html" beforeDir="false" afterPath="$PROJECT_DIR$/trailIntro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +153,7 @@
       <workItem from="1649655960298" duration="6571000" />
       <workItem from="1650021808313" duration="3628000" />
       <workItem from="1650096285615" duration="687000" />
-      <workItem from="1651576209768" duration="4297000" />
+      <workItem from="1651576209768" duration="6929000" />
     </task>
     <task id="LOCAL‎00001" summary="start">
       <created>1640883037813</created>
@@ -423,7 +371,13 @@
       <option name="presentableId" value="LOCAL‎00036" />
       <updated>1650093812230</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL‎00037" summary="change to english">
+      <created>1651580761225</created>
+      <option name="number" value="LOCAL‎00037" />
+      <option name="presentableId" value="LOCAL‎00037" />
+      <updated>1651580761225</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +397,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove download" />
     <MESSAGE value="change pics and tags" />
     <MESSAGE value="change in slider" />
     <MESSAGE value="change data and remove birthdate" />
@@ -468,7 +421,8 @@
     <MESSAGE value="valence fix" />
     <MESSAGE value="Affect" />
     <MESSAGE value="fix bug and add buttons in sync" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug and add buttons in sync" />
+    <MESSAGE value="change to english" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to english" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1644513530488">
@@ -507,13 +461,13 @@
       <screen x="0" y="0" width="1920" height="1034" />
     </state>
     <state width="1876" height="271" key="GridCell.Tab.0.right/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644764165064" />
-    <state x="617" y="276" key="Vcs.Push.Dialog.v2" timestamp="1650093813983">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="386" y="189" key="Vcs.Push.Dialog.v2" timestamp="1651580771657">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="578" y="257" key="Vcs.Push.Dialog.v2/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644587083719" />
     <state x="-1534" y="420" key="Vcs.Push.Dialog.v2/-1920.229.1280.767/0.0.2048.1112@-1920.229.1280.767" timestamp="1647280546363" />
     <state x="617" y="276" key="Vcs.Push.Dialog.v2/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1650093813983" />
-    <state x="386" y="189" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1649685137759" />
+    <state x="386" y="189" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1651580771657" />
     <state x="829" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647778522757">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -521,9 +475,10 @@
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.773/0.0.1920.1040@0.0.1920.1040" timestamp="1644481876779" />
     <state x="829" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1647778522757" />
     <state x="518" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.769@0.0.1280.769" timestamp="1645603693019" />
-    <state x="734" y="289" width="579" height="534" key="find.popup" timestamp="1650092466827">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="459" y="0" width="557" height="760" key="find.popup" timestamp="1651582533104">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="734" y="289" width="579" height="534" key="find.popup/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1650092466827" />
+    <state x="459" y="0" width="557" height="760" key="find.popup/0.0.1280.760@0.0.1280.760" timestamp="1651582533104" />
   </component>
 </project>
