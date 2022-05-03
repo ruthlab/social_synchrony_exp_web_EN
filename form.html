@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+    <title>social synchrony</title>
+</head>
+
+<body class="bl text-white he-text  text-xl-center">
+
+<br>
+<img src="logo.png" alt="logo" class="w-50">
+<h4 class="text-decoration-underline">פרטים אישיים:</h4>
+<div class="container d-flex p-2 text-xl-end align-items-center justify-content-center">
+    <form class="text-xl-center form-inline" id="infoForm">
+            <label class="my-1 mr-1" for="age">גיל: </label>
+            <input class="w-25 span2 col-md-1" id="age" name="ageInput" type="number" min=18 max=120>
+        <br>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">מין:</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="sexInput">
+            <option selected></option>
+            <option value="male">זכר</option>
+            <option value="female">נקבה</option>
+            <option value="other">אחר</option>
+        </select>
+        <br>
+        <label class="my-1 mr-2 d-inline" for="inlineFormCustomSelectPref2"> האם ראית את הסרט 'Forrest Gump'?</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref2" name="seenMovieInput">
+            <option selected></option>
+            <option value="yes">כן</option>
+            <option value="no">לא</option>
+        </select>
+        <br>
+        <label class="my-1 mr-2 d-inline" for="inlineFormCustomSelectPref2"> כמה שעות בשבוע אתה מבלה בפעילות גופנית או בנגינה זוגית או קבוצתית (כגון כדורסל, ריקוד, נגינה בהרכב)?</label>
+            <input class="w-25 span2 col-md-1" id="activity" name="activity" type="number" min=0 max=99999999>
+        <br>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref3">השכלה:</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref3" name="educationInput">
+            <option selected></option>
+            <option value="highschool">תיכונית</option>
+            <option value="BA/BSc">תואר ראשון</option>
+            <option value="MA/MSc">תואר שני</option>
+            <option value="PhD">תואר שלישי</option>
+        </select>
+        <br>
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref4">מקום מגוריך:</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref4" name="liveInput">
+            <option selected></option>
+            <option value="Parents/Siblings">בבית ההורים או המשפחה</option>
+            <option value="Dorms/shared flat">עם שותפים או במעונות</option>
+            <option value="With spouse">עם בן/בת הזוג</option>
+            <option value="Alone">לבד</option>
+        </select>
+        <br>
+    </form>
+</div>
+<button class="btn btn-primary my-1" onclick="continueForm()" target="_self">המשך</button>
+</body>
+</html>
