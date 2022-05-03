@@ -329,7 +329,7 @@ function nextSlide(type, slideNum) {
         document.getElementById("imgClickAndChange" + type[0].toLowerCase()).src = type.toLowerCase() + "\\Slide"+ num+".png";
         let btn = document.createElement('button');
         let link = document.createElement('a');
-        let next = document.createTextNode("המשך");
+        let next = document.createTextNode("Continue");
         btn.classList.add("btn");
         btn.classList.add("btn-primary");
         btn.classList.add("my-1");
@@ -413,7 +413,7 @@ function dataTagTrail(){
             tutorial.src="slider_tutorial_3.png";
             let btn = document.createElement('button');
             let link = document.createElement('a');
-            let next = document.createTextNode("המשך");
+            let next = document.createTextNode("Continue");
             btn.classList.add("btn");
             btn.classList.add("btn-primary");
             btn.classList.add("my-1");
@@ -470,7 +470,7 @@ function dataTagVal(){
             tutorial.src="next_movie.png";
             var btn = document.createElement('button');
             var link = document.createElement('a');
-            var next = document.createTextNode("המשך");
+            var next = document.createTextNode("Continue");
             btn.classList.add("btn");
             btn.classList.add("btn-primary");
             btn.classList.add("my-1");
