@@ -98,7 +98,7 @@ function continueQuestions(){
             window.location = "IRI.html";
         }
     } else {
-        alert('אנא מלא/י את כל הפרטים');
+        alert('Please fill in all the requested fields');
     }
 }
 
@@ -159,7 +159,7 @@ function IRI(){
         body.appendChild(br);
         body.appendChild(btn);
     } else {
-        alert('אנא מלא/י את כל הפרטים');
+        alert('Please fill in all the requested fields');
     }
 }
 
@@ -176,7 +176,7 @@ function continueForm() {
         setStorage("personalInfo", {'age' : age, 'sex' : sex, 'seenMovie' : seenMovie,  'education' : education, 'live' : live, 'sync_time': activity});
         window.location = 'trailIntro.html';
     } else {
-        alert('אנא מלא/י את כל הפרטים');
+        alert('Please fill in all the requested fields');
     }
 }
 
