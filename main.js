@@ -147,6 +147,7 @@ function IRI(){
         let date = Date.now().toString()
         var paragraph2 = document.createElement("p");
         var text2 = document.createTextNode("result_"+date +".json");
+        paragraph2.classList.add("text-danger");
         paragraph2.appendChild(text2);
 
         diver.appendChild(debrief);
