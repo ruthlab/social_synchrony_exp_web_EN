@@ -144,17 +144,24 @@ function IRI(){
         var debrief = document.createElement("img");
         debrief.classList.add("w-75");
         debrief.src="debrief.png";
+        let date = Date.now().toString()
+        var paragraph2 = document.createElement("p");
+        var text2 = document.createTextNode("result_"+date +".json");
+        paragraph2.appendChild(text2);
+
         diver.appendChild(debrief);
+        diver.appendChild(paragraph2);
+
         body.appendChild(diver);
         var btn = document.createElement('button');
-        var text = document.createTextNode("הורד תוצאות");
+        var text = document.createTextNode("Download results");
         btn.appendChild(text);
         btn.classList.add("btn");
         btn.classList.add("btn-primary");
         btn.classList.add("my-1");
         btn.setAttribute("onclick","onDownload();");
         var br = document.createElement('br');
-        uploadFileExample("result "+Date.now().toString() +".json", "application/json", "1PWmDDeCRfEgn602o3mQjEDIJnDq8gZDn", JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), access_token)
+        uploadFileExample("result_"+date +".json", "application/json", "1PWmDDeCRfEgn602o3mQjEDIJnDq8gZDn", JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), access_token)
         onDownload();
         body.appendChild(br);
         body.appendChild(btn);
@@ -371,7 +378,6 @@ function download(content, fileName, contentType) {
     const file = new Blob([content], { type: contentType });
     a.href = URL.createObjectURL(file);
     a.download = fileName;
-    setTimeout(() => a.click(), 1000);
 }
 
 function onDownload(){
