@@ -143,13 +143,10 @@ function IRI(){
         diver.classList.add("text-xl-center");
         var debrief = document.createElement("img");
         debrief.classList.add("w-75");
-        debrief.src="debrif_old.png";
+        debrief.src="debrif.png";
         let date = Date.now().toString()
         var paragraph2 = document.createElement("p");
-        var text2 = document.createTextNode("Please copy the following link to a new tab in chrome browser and you will be transferred to the next experiment:\n" +
-            "\n\n" +
-            " https://idc.az1.qualtrics.com/jfe/form/SV_b7WsAN3BU3ChBYi")
-        //var text2 = document.createTextNode("result_"+date +".json");
+        var text2 = document.createTextNode("result_"+date +".json");
         paragraph2.classList.add("text-danger");
         paragraph2.appendChild(text2);
 
