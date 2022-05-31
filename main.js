@@ -5,54 +5,52 @@ document.addEventListener("DOMContentLoaded", function nothing(){
     b = document.createElement("script");
     b.src='https://apis.google.com/js/api.js';
     document.body.appendChild(b)
-    randomizer();
+    setTimeout(function () {
+        var pHeader = { "alg": "RS256", "typ": "JWT" }
+        var sHeader = JSON.stringify(pHeader);
+
+        var pClaim = {};
+        pClaim.aud = "https://www.googleapis.com/oauth2/v3/token";
+        pClaim.scope = "https://www.googleapis.com/auth/drive";
+        pClaim.iss = "upload@academic-veld-337011.iam.gserviceaccount.com";
+        pClaim.exp = KJUR.jws.IntDate.get("now + 1hour");
+        pClaim.iat = KJUR.jws.IntDate.get("now");
+
+        var sClaim = JSON.stringify(pClaim);
+
+        var sJWS = KJUR.jws.JWS.sign(null, sHeader, sClaim, key);
+
+        var XHR = new XMLHttpRequest();
+        var urlEncodedData = "";
+        var urlEncodedDataPairs = [];
+
+        urlEncodedDataPairs.push(encodeURIComponent("grant_type") + '=' +
+            encodeURIComponent("urn:ietf:params:oauth:grant-type:jwt-bearer"));
+        urlEncodedDataPairs.push(encodeURIComponent("assertion") + '=' + encodeURIComponent(sJWS));
+        urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
+
+        // We define what will happen if the data are successfully sent
+        XHR.addEventListener('load', function (event) {
+            var response = JSON.parse(XHR.responseText);
+            access_token = response["access_token"]
+
+        });
+
+        // We define what will happen in case of error
+        XHR.addEventListener('error', function (event) {
+            console.log('Oops! Something went wrong.');
+        });
+
+        XHR.open('POST', 'https://www.googleapis.com/oauth2/v3/token');
+        XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        XHR.send(urlEncodedData);
+    }, 2000);
 })
 
 var access_token = '';
 var apiKey = 'AIzaSyBL6AWjlkqJ6f_GmJTDGxLwYQJR_UXUJis';
 var key = "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDP1btyCb5plvr/\naFoKqwgHMm5qhWaJ9buQcf1FMg0qI3Uro5X0nPTqFNJLlSFUfzMAydLgJp7xCIuV\nrDfwW1elI+raun9oZovDNHc1V46QsDMeOVxiCCHAXwGUcsDsK0uRyMgN5ZtudqIQ\noX87eb1RqhcoqwTYrlnv/4moUeYTnAPUmovJCR4IykWxCm2gPaGMIADDTYS8e22c\n0OeS745x+iQh6/dm9C4oQxy1X+asJsAmzXnW9YLYIBlSqFco1DnMQMzs1g0TPrpb\n/XIp9lwZ2vn8dYdRrn8k2l/LJLkKaGLhbDHHJW6dUQ63qhLMK6c9sjWLOzy4Wl1h\nsZQOQoGnAgMBAAECggEAG2kpeS9ezSdMAE5/faO0Adr9ZBAnB3AA5lqaWDtzMAkQ\nJYrENshSpuLLH4vSIwZJsENuDAEb+lcxrbJSiGFLrGyRx3pMXnUT3tF3HXJoS53p\niAVxsT44UVpWZ4FA/4TwSRBtjiOnvchotH/QO4RhWzlvJ35yu683Dmep/Kicix5O\nLLRrFHcOLgu4staxFXjMapm+dG4qL9LLYQkyk6ZRLXkWDUa65dhmwKK5kqejT+W+\nUmNCvuTjhWdupWsiuwURKD51Jn7sqLnC2p/hTeQqSJ56YKcPz7uj0WpNa6sVi56k\nEYuV7xDwfcbyBbWeha9Jv9kpgpTWV8NiTN51Np97AQKBgQDn4Wg54EGAMbTsdLn4\n0bfyoqg/b1svuTwlBQMi5of162Xm0pEC3HRGVC3YUGTgDP20GGtfiOUOba5Ma6J1\nJKH3hkAsClePimjW9GgH/EAZTi5krh9QVSW9G454LcizoH5VTEO+WsH/pjlCUXxf\nlmvGMOvcUDl12KGctdGEWUA/AQKBgQDldAfPat8GZvgBTJATxkb015qGT0NziLRu\nG9ZAGDsV6wyPdWQK7gGJ/6qE4CdwQIAww2sloQyEozkQ+6SwLhx8E+4x0eu6/JVk\nv4qEgCdOZbUsJQ01WUiEC4OmZcRblIdNY2kfIIqZ3+8QuPDYADilnjrHl+g74BmZ\ns6/IPMFopwKBgHNP7fPyKMCmd3GrbpxlNpPr/b1mFDO8a0OBpZiiifRqtsc96a1B\nknUzAYV0HWYqL7Ry/FqLClXNh4Mrd6PHruAYHCuKjRat3wseiemGsR2ken/I83uQ\njG7pmET9h7SEWK70eS/dlGIc+JaZTT9/32K1C2YJYznOnDgBVwr5E3EBAoGAbWc1\nkiBS1qqh9Xyb9dHEY1mpxABnGN9FqHp9XXIwOfMouf4vBUcWVMYid9io9UzL0nRa\n0kZHwbZRr1dM3vQdgMu/9uEwlKd6U99AHI0+MJMuHy5LbfR0LwGOc/hx93iKSsvr\ng3vwmg273y1PKK5yVAVt4Vz8zg+8JR0X41GUpmECgYAQZZdVuz1DxwdKGBNqeYia\nBIi3unos52xgQ7X9M/1i+iaQLbKjzs4L27RFH9iOZP3vm9SPYykjiValcBZK+60C\n1cNCZM2LxsaexCFKorF40O0Yxe0oUb32L7/4IaNoBFODyr5SwKTJ/CzhktvhuutR\njZM61JEnlkJZbosMFQ4Y4A==\n-----END PRIVATE KEY-----\n";
 
-setTimeout(function () {
-    var pHeader = { "alg": "RS256", "typ": "JWT" }
-    var sHeader = JSON.stringify(pHeader);
-
-    var pClaim = {};
-    pClaim.aud = "https://www.googleapis.com/oauth2/v3/token";
-    pClaim.scope = "https://www.googleapis.com/auth/drive";
-    pClaim.iss = "upload@academic-veld-337011.iam.gserviceaccount.com";
-    pClaim.exp = KJUR.jws.IntDate.get("now + 1hour");
-    pClaim.iat = KJUR.jws.IntDate.get("now");
-
-    var sClaim = JSON.stringify(pClaim);
-
-    var sJWS = KJUR.jws.JWS.sign(null, sHeader, sClaim, key);
-
-    var XHR = new XMLHttpRequest();
-    var urlEncodedData = "";
-    var urlEncodedDataPairs = [];
-
-    urlEncodedDataPairs.push(encodeURIComponent("grant_type") + '=' +
-        encodeURIComponent("urn:ietf:params:oauth:grant-type:jwt-bearer"));
-    urlEncodedDataPairs.push(encodeURIComponent("assertion") + '=' + encodeURIComponent(sJWS));
-    urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
-
-    // We define what will happen if the data are successfully sent
-    XHR.addEventListener('load', function (event) {
-        var response = JSON.parse(XHR.responseText);
-        access_token = response["access_token"]
-
-    });
-
-    // We define what will happen in case of error
-    XHR.addEventListener('error', function (event) {
-        console.log('Oops! Something went wrong.');
-        console.log(event);
-    });
-
-    XHR.open('POST', 'https://www.googleapis.com/oauth2/v3/token');
-    XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    XHR.send(urlEncodedData);
-}, 2000);
 
 function isEmptyOrNull(a) {
     return a == '' || a == undefined;
@@ -143,10 +141,10 @@ function IRI(){
         diver.classList.add("text-xl-center");
         var debrief = document.createElement("img");
         debrief.classList.add("w-75");
-        debrief.src="debrif.png";
+        debrief.src="debrief.png";
         let date = Date.now().toString()
         var paragraph2 = document.createElement("p");
-        var text2 = document.createTextNode("result_"+date +".json");
+        var text2 = document.createTextNode("v3105_result_"+date +".json");
         paragraph2.classList.add("text-danger");
         paragraph2.appendChild(text2);
 
@@ -162,7 +160,7 @@ function IRI(){
         btn.classList.add("my-1");
         btn.setAttribute("onclick","onDownload();");
         var br = document.createElement('br');
-        uploadFileExample("result_"+date +".json", "application/json", "1PWmDDeCRfEgn602o3mQjEDIJnDq8gZDn", JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), access_token)
+        uploadFileExample("v3105_result_"+date +".json", "application/json", "1PWmDDeCRfEgn602o3mQjEDIJnDq8gZDn", JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), access_token)
         onDownload();
         body.appendChild(br);
         body.appendChild(btn);
@@ -170,7 +168,6 @@ function IRI(){
         alert('Please fill in all the requested fields');
     }
 }
-
 
 function continueForm() {
     var age = document.getElementById("infoForm").ageInput.value;
@@ -279,50 +276,45 @@ function loadVideo(type){
 }
 
 function firstDataTag(){
-    let type = getStorage("trail1");
     let con = true;
-    var startTime = Date.now();
-    document.getElementById('thevideo'+ type[0].toLowerCase()).addEventListener('ended',myHandler,false);
+    let type = getStorage("trail1");
+    var vid = document.getElementById('thevideo'+ type[0].toLowerCase());
+    vid.addEventListener('ended',myHandler,false);
     function myHandler(e) {
         con = false;
-
     }
     var interval = window.setInterval(function () {
         if (con){
             var sliderVal = Math.abs(document.getElementById('range'+ type[0].toLowerCase()).value);
-            var elapsedTime = Date.now() - startTime;
-            appendToInnerDict(type, {"time":(elapsedTime / 1000).toFixed(1), "rate": sliderVal});
+            appendToInnerDict(type, {"time":vid.currentTime.toFixed(1), "rate": sliderVal});
         }
         else {
-            window.clearInterval(interval);
             window.location = 'transition.html';
 
         }
-        } , 100);
+    }, 100);
 
 }
 
 
 function SecondDataTag(){
-    let type = getStorage("trail2");
     let con = true;
-    var startTime = Date.now();
-    document.getElementById('thevideo'+ type[0].toLowerCase()).addEventListener('ended',myHandler,false);
+    let type = getStorage("trail2");
+    var vid = document.getElementById('thevideo'+ type[0].toLowerCase());
+    vid.addEventListener('ended',myHandler,false);
     function myHandler(e) {
         con = false;
     }
     var interval = window.setInterval(function () {
         if (con){
             var sliderVal = Math.abs(document.getElementById('range'+ type[0].toLowerCase()).value);
-            var elapsedTime = Date.now() - startTime;
-            appendToInnerDict(type, {"time":(elapsedTime / 1000).toFixed(1), "rate": sliderVal});
-            // console.log((elapsedTime / 1000).toFixed(1) ,sliderVal);
+            appendToInnerDict(type, {"time":vid.currentTime.toFixed(1), "rate": sliderVal});
         }
         else {
-            window.clearInterval(interval);
             window.location = 'transition.html';
+
         }
-    } , 100);
+    }, 100);
 
 }
 
@@ -382,7 +374,7 @@ function download(content, fileName, contentType) {
 }
 
 function onDownload(){
-    download(JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), "result "+Date.now().toString() +".json", "text/plain");
+    download(JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), "v2_result_"+Date.now().toString() +".json", "text/plain");
 }
 
 function playVidTrail() {
@@ -396,7 +388,6 @@ function playVidTrail() {
 
 function dataTagTrail(){
     let con = true;
-    var startTime = Date.now();
     document.getElementById('mighty').addEventListener('ended',myHandler,false);
     function myHandler(e) {
         con = false;
@@ -404,20 +395,17 @@ function dataTagTrail(){
     var interval = window.setInterval(function () {
         if (con){
             var sliderVal = Math.abs(document.getElementById('rangetr').value);
-            var elapsedTime = Date.now() - startTime;
-            appendToInnerDict('sheepwolf', {"time":(elapsedTime / 1000).toFixed(1), "rate": sliderVal});
-            // console.log((elapsedTime / 1000).toFixed(1) ,sliderVal);
+            appendToInnerDict('sheepwolf', {"time":document.getElementById('mighty').currentTime.toFixed(1), "rate": sliderVal});
         }
         else {
-            window.clearInterval(interval);
-            var body = document.getElementById('bodytr')
-            var videodiv = document.getElementById('mightydiv')
+            var body = document.getElementById('bodytr');
+            var videodiv = document.getElementById('mightydiv');
             body.removeChild(videodiv);
             var diver = document.createElement("div");
             diver.classList.add("text-xl-center");
             var tutorial = document.createElement("img");
             tutorial.classList.add("w-50");
-            tutorial.src="slider_tutorial_3.png";
+            tutorial.src = "slider_tutorial_3.png";
             let btn = document.createElement('button');
             let link = document.createElement('a');
             let next = document.createTextNode("Continue");
@@ -427,7 +415,7 @@ function dataTagTrail(){
             link.classList.add("text-decoration-none");
             link.classList.add("text-white");
             link.appendChild(next);
-            link.href = "intro"+ JSON.parse(localStorage.getItem('expStorage'))['trail1'] +".html";
+            link.href = "intro" + JSON.parse(localStorage.getItem('expStorage'))['trail1'] + ".html";
             btn.appendChild(link);
             var br = document.createElement('br');
 
@@ -436,7 +424,7 @@ function dataTagTrail(){
             body.appendChild(br);
             body.appendChild(btn);
         }
-    } , 100);
+    }, 100);
 }
 
 function playVidVal() {
@@ -461,7 +449,6 @@ function dataTagVal(){
             var sliderValY = slider.position.y.toString();
             var elapsedTime = Date.now() - startTime;
             appendToInnerDict('valence', {"time":(elapsedTime / 1000).toFixed(1), "x": sliderValX,"y": sliderValY});
-            // console.log((elapsedTime / 1000).toFixed(1) ,sliderVal);
         }
         else {
             window.clearInterval(interval);
@@ -539,8 +526,6 @@ function updateFileExample(fileName, type, parent, data, accessToken) {
         body: formData
     }).then( function( response ){
         return response.json();
-    }).then( function( value ){
-        console.log( value );
     });
 }
 
