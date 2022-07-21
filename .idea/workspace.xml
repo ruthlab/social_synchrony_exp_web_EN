@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ce3fee-586b-401b-bde4-908932d65ffa" name="Default Changelist" comment="change to old debrif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +150,9 @@
       <workItem from="1651996404081" duration="5332000" />
       <workItem from="1652357635176" duration="14526000" />
       <workItem from="1653228338931" duration="1319000" />
-      <workItem from="1653979496936" duration="12998000" />
-    </task>
-    <task id="LOCAL‎00001" summary="start">
-      <created>1640883037813</created>
-      <option name="number" value="LOCAL‎00001" />
-      <option name="presentableId" value="LOCAL‎00001" />
-      <updated>1640883037813</updated>
+      <workItem from="1653979496936" duration="13919000" />
+      <workItem from="1654714755565" duration="1468000" />
+      <workItem from="1658377352481" duration="2008000" />
     </task>
     <task id="LOCAL‎00002" summary="change gaze slides">
       <created>1640885776416</created>
@@ -448,7 +442,13 @@
       <option name="presentableId" value="LOCAL‎00049" />
       <updated>1653228438472</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL‎00050" summary="samples by video time and fix bug">
+      <created>1653998360165</created>
+      <option name="number" value="LOCAL‎00050" />
+      <option name="presentableId" value="LOCAL‎00050" />
+      <updated>1653998360166</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,8 +468,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix form" />
-    <MESSAGE value="trail intro controlers" />
     <MESSAGE value="upload questions" />
     <MESSAGE value="add movie" />
     <MESSAGE value="rename segment 3" />
@@ -493,43 +491,25 @@
     <MESSAGE value="like update" />
     <MESSAGE value="fix debrif" />
     <MESSAGE value="change to old debrif" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to old debrif" />
+    <MESSAGE value="samples and fix bug" />
+    <MESSAGE value="samples by video time and fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="samples by video time and fix bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="708" y="282" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1644763174315">
-      <screen x="0" y="0" width="1920" height="1034" />
-    </state>
-    <state x="708" y="282" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644763174315" />
     <state x="503" y="213" key="FileChooserDialogImpl" timestamp="1653319459863">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="503" y="213" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1653319459863" />
-    <state width="1876" height="271" key="GridCell.Tab.0.bottom" timestamp="1644764165064">
-      <screen x="0" y="0" width="1920" height="1034" />
-    </state>
-    <state width="1876" height="271" key="GridCell.Tab.0.bottom/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644764165064" />
-    <state width="1876" height="271" key="GridCell.Tab.0.center" timestamp="1644764165064">
-      <screen x="0" y="0" width="1920" height="1034" />
-    </state>
-    <state width="1876" height="271" key="GridCell.Tab.0.center/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644764165064" />
-    <state width="1876" height="271" key="GridCell.Tab.0.left" timestamp="1644764165063">
-      <screen x="0" y="0" width="1920" height="1034" />
-    </state>
-    <state width="1876" height="271" key="GridCell.Tab.0.left/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644764165063" />
-    <state width="1876" height="271" key="GridCell.Tab.0.right" timestamp="1644764165064">
-      <screen x="0" y="0" width="1920" height="1034" />
-    </state>
-    <state width="1876" height="271" key="GridCell.Tab.0.right/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644764165064" />
-    <state x="386" y="189" key="Vcs.Push.Dialog.v2" timestamp="1653228450094">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state x="386" y="187" key="Vcs.Push.Dialog.v2" timestamp="1653998362529">
+      <screen x="0" y="0" width="1280" height="752" />
     </state>
     <state x="-1534" y="420" key="Vcs.Push.Dialog.v2/-1920.229.1280.767/0.0.2048.1112@-1920.229.1280.767" timestamp="1647280546363" />
     <state x="617" y="276" key="Vcs.Push.Dialog.v2/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1650093813983" />
+    <state x="386" y="187" key="Vcs.Push.Dialog.v2/0.0.1280.752@0.0.1280.752" timestamp="1653998362529" />
     <state x="386" y="189" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1653228450094" />
     <state x="829" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647778522757">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="777" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1280.769/0.0.1920.1034@0.0.1920.1034" timestamp="1644759366897" />
     <state x="829" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1647778522757" />
     <state x="518" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.769@0.0.1280.769" timestamp="1645603693019" />
     <state x="687" y="0" width="557" height="760" key="find.popup" timestamp="1652948286747">
