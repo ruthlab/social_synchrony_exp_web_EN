@@ -7,8 +7,35 @@
     <link href="style.css" rel="stylesheet">
     <script type="text/javascript" src="main.js"></script>
     <title>social synchrony</title>
+    <style>
+        #myProgress {
+            width: 100%;
+            margin-left: 7em;
+            margin-right: 5em;
+            align-items: center;
+        }
+        #border {
+            height: 35px;
+            border-color: #ffffff;
+            border-width: 2px;
+            border-style: solid;
+            margin-left: 7em;
+            margin-right: 5em;
+            align-items: center;
+        }
+        #myBar {
+            width: 0%;
+            height: 30px;
+            background-color: #ffffff;
+        }
+    </style>
 </head>
-<h1 id="loading">Loading...</h1>
+<div id="myProgress" class="bl text-xl-center justify-content-center">
+    <h3 id="loading">Loading...</h3>
+    <div id="border" style="">
+        <div id="myBar"></div>
+    </div>
+</div>
 
 <body onLoad="loadVideo('Gaze')" class="bl text-white he-text text-xl-center" id="bodyg">
 <div id="videodivg">

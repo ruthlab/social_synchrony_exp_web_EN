@@ -10,18 +10,18 @@
     <style>
         #myProgress {
             width: 100%;
-            margin-left: 5em;
+            margin-left: 7em;
             margin-right: 5em;
             align-items: center;
         }
         #border {
-            height: 30px;
+            height: 35px;
             border-color: #ffffff;
-            border-width: 3px;
+            border-width: 2px;
             border-style: solid;
-            margin-left: 5em;
+            margin-left: 7em;
             margin-right: 5em;
-            align-items: end;
+            align-items: center;
         }
         #myBar {
             width: 0%;
@@ -30,17 +30,18 @@
         }
     </style>
 </head>
-<div id="myProgress" class="bl text-xl-center justify-content-center">
-    <h3 id="loading">Loading...</h3>
-    <div id="border" style="">
-    <div id="myBar"></div>
-    </div>
-</div>
 
 <body onLoad="loadVideoTrail()" class="bl text-white he-text text-xl-center" id="bodytr" >
 
 <div id="mightydiv">
     <div class="text-xl-center">
+            <div id="myProgress" class="bl text-xl-center justify-content-center">
+                <h3 id="loading">Loading...</h3>
+                <div id="border" >
+                    <div id="myBar"></div>
+                </div>
+            </div>
+
         <video width="900" height="450" id="mighty">
         </video>
         <div id="btndivtr" class="w-10 container px-2 p-3 d-flex  justify-content-center ">
