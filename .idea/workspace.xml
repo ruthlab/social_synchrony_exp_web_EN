@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0ce3fee-586b-401b-bde4-908932d65ffa" name="Default Changelist" comment="change to old debrif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trail.html" beforeDir="false" afterPath="$PROJECT_DIR$/trail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,13 +154,7 @@
       <workItem from="1653979496936" duration="13919000" />
       <workItem from="1654714755565" duration="1468000" />
       <workItem from="1658377352481" duration="4894000" />
-      <workItem from="1658553349551" duration="2812000" />
-    </task>
-    <task id="LOCAL‎00005" summary="fix bugs3">
-      <created>1640891835960</created>
-      <option name="number" value="LOCAL‎00005" />
-      <option name="presentableId" value="LOCAL‎00005" />
-      <updated>1640891835960</updated>
+      <workItem from="1658553349551" duration="3901000" />
     </task>
     <task id="LOCAL‎00006" summary="local storage">
       <created>1640933506803</created>
@@ -451,7 +444,13 @@
       <option name="presentableId" value="LOCAL‎00053" />
       <updated>1658555166380</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL‎00054" summary="loading sheep fix">
+      <created>1658556790983</created>
+      <option name="number" value="LOCAL‎00054" />
+      <option name="presentableId" value="LOCAL‎00054" />
+      <updated>1658556790983</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +470,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix random" />
     <MESSAGE value="update movie" />
     <MESSAGE value="update slides" />
     <MESSAGE value="Sync" />
@@ -496,17 +494,18 @@
     <MESSAGE value="preloading videos" />
     <MESSAGE value="preloading sheep" />
     <MESSAGE value="loading sheep" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading sheep" />
+    <MESSAGE value="loading sheep fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading sheep fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="213" key="FileChooserDialogImpl" timestamp="1653319459863">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="503" y="213" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1653319459863" />
-    <state x="618" y="275" key="Vcs.Push.Dialog.v2" timestamp="1658555167671">
+    <state x="618" y="275" key="Vcs.Push.Dialog.v2" timestamp="1658556792280">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="618" y="275" key="Vcs.Push.Dialog.v2/-1920.229.1280.760/0.0.2048.1104@0.0.2048.1104" timestamp="1658555167671" />
+    <state x="618" y="275" key="Vcs.Push.Dialog.v2/-1920.229.1280.760/0.0.2048.1104@0.0.2048.1104" timestamp="1658556792280" />
     <state x="617" y="276" key="Vcs.Push.Dialog.v2/-1920.229.1280.767/0.0.2048.1112@0.0.2048.1112" timestamp="1650093813983" />
     <state x="386" y="187" key="Vcs.Push.Dialog.v2/0.0.1280.752@0.0.1280.752" timestamp="1653998362529" />
     <state x="386" y="189" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1653228450094" />
