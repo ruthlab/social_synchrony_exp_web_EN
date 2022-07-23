@@ -415,16 +415,21 @@ function onDownload(){
     download(JSON.stringify(JSON.parse(localStorage.getItem('expStorage'))), "v2_result_"+Date.now().toString() +".json", "text/plain");
 }
 function loadVideoTrail(){
+
     var vid1 = document.getElementById('mighty')
     var req = new XMLHttpRequest();
     req.open('GET', "movies/mighty1.mp4", true);
     req.responseType = 'blob';
-
-    req.onload = function() {
+    req.onprogress = function(pr) {
+        var elem = document.getElementById("myBar");
+        console.log((pr.loaded / pr.total) * 100);
+        elem.style.width = ((pr.loaded / pr.total) * 100) + "%";
+    };
+    req.onloadend = function() {
         // Onload is triggered even on 404
         // so we need to check the status code
         if (this.status === 200) {
-            var loading = document.getElementById("loading");
+            var loading = document.getElementById("myProgress");
             loading.remove();
             var videoBlob = this.response;
             var vid = URL.createObjectURL(videoBlob); // IE10+
